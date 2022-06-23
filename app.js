@@ -13,7 +13,7 @@ app.engine('ejs', ejs.__express);
 
 app.use(express.static(path.resolve('public')));
 app.use(compression());
-
+ 
 app.use((req, res, next) => {
     res.locals.ctx = {
         prismicH,
